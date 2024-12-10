@@ -10,91 +10,180 @@
 </head>
 
 <body>
+
     <header>
         <nav>
-            <ul class="hidden">
-                <button type="button" class="nav-button" id="closeNav">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path d="M15.707 9.707 13.414 12l2.293 2.293a.999.999 0 1 1-1.414 1.414L12 13.414l-2.293 2.293a.997.997 0 0 1-1.414 0 .999.999 0 0 1 0-1.414L10.586 12 8.293 9.707a.999.999 0 1 1 1.414-1.414L12 10.586l2.293-2.293a.999.999 0 1 1 1.414 1.414ZM24 12c0 6.617-5.383 12-12 12S0 18.617 0 12 5.383 0 12 0s12 5.383 12 12Zm-2 0c0-5.514-4.486-10-10-10S2 6.486 2 12s4.486 10 10 10 10-4.486 10-10Z" fill="#000000" opacity="1" data-original="#000000"/></g></svg>
-                </button>
-                <li class="active"><a href="/">Home</a></li>
-                <li><a href="/aboutme/">About Me</a></li>
+            <ul>
+                <li class=""><a href="/">Home</a></li>
+                <li class="active"><a href="/aboutme/">About Me</a></li>
                 <li><a href="/myfamily/">My Family</a></li>
                 <li><a href="/gallery/">Gallery</a></li>
                 <li><a href="/contact/">Contact</a></li>
             </ul>
-            <button type="button" class="nav-button" id="openNav">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M480 224H32c-17.673 0-32 14.327-32 32s14.327 32 32 32h448c17.673 0 32-14.327 32-32s-14.327-32-32-32zM32 138.667h448c17.673 0 32-14.327 32-32s-14.327-32-32-32H32c-17.673 0-32 14.327-32 32s14.327 32 32 32zM480 373.333H32c-17.673 0-32 14.327-32 32s14.327 32 32 32h448c17.673 0 32-14.327 32-32s-14.327-32-32-32z" fill="#000000" opacity="1" data-original="#000000"/></g></svg>
-            </button>
         </nav>
         <div class="page-title">
-            <h1>Home</h1>
+            <h1>About Me</h1>
         </div>
     </header>
 
     <main>
-        <section class="home-welcome">
-            <div class="container">
-                <div>
-                    <span>
-                        HELLO, MY NAME IS
-                    </span>
-                    <span>
-                        PRINCE JEORGE V. OJEDA
-                    </span>
-                </div>
-                <div>
-                    <img loading="lazy" src="s" alt="">
-                </div>
-            </div>
-        </section>
-        <section class="home-introduction">
+
+        <section class="aboutme-introduction">
             <div class="container">
                 <p>
-                    Hi there! I’m a BSIT student who enjoys coding, watching movies and shows, and playing games. Feel
-                    free to explore and learn more about my journey and interests.
+                    I’m a curious and dedicated BSIT student who doesn’t give up easily. I love watching movies, gaming,
+                    and learning how to code. Right now, I’m working on improving my skills in creating apps and
+                    websites. My goal is to become a cybersecurity specialist and protect systems and networks from
+                    hackers, making sure everyone stays safe online.
                 </p>
             </div>
         </section>
-        <section class="home-highlights">
+        <section class="aboutme-skills">
             <div class="container">
-                <h2>3 FUN FACTS ABOUT ME</h2>
-                <div id="slide-scroll">
-                    <div class="highlight-card-container">
-                        <div class="highlight-card">
-                            <img loading="lazy" src="/assets/images/rubiks-cube.png" alt="">
-                            <p>I love solving Rubik's cubes, even if my time doesn't always get faster!</p>
-                            <span>Rubik's Cube Challenger</span>
+                <h2 class="aboutme-skills-title">SKILLS</h2>
+                <div class="skill-container">
+                    <div class="icon-container">
+                        <img loading="lazy" src="/assets/images/Game Effect.gif" alt="">
+                        <img loading="lazy" src="/assets/icons/python.png" alt="Python">
+                    </div>
+                    <div class="progress-container">
+                        <h3 class="skill-title">PYTHON</h3>
+                        <div class="skill-progress sp4">
+                            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                            <div></div>
                         </div>
-                        <div class="highlight-card">
-                            <img loading="lazy" src="/assets/images/game-controller.webp" alt="">
-                            <p>I love playing games, whether I win or lose—it's all about the fun!</p>
-                            <span>Player for Fun</span>
+                    </div>
+                </div>
+                <div class="skill-container">
+                    <div class="icon-container">
+                        <img loading="lazy" src="/assets/images/Game Effect.gif" alt="">
+                        <img loading="lazy" src="/assets/icons/java.png" alt="Java">
+                    </div>
+                    <div class="progress-container">
+                        <h3 class="skill-title">JAVA</h3>
+                        <div class="skill-progress sp3">
+                            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                            <div></div>
                         </div>
-                        <div class="highlight-card">
-                            <img loading="lazy" src="/assets/images/action-clip.png" alt="">
-                            <p>My list of must-watch movies is longer than my to-do list.</p>
-                            <span>Movies Over Tasks</span>
+                    </div>
+                </div>
+                <div class="skill-container">
+                    <div class="icon-container">
+                        <img loading="lazy" src="/assets/images/Game Effect.gif" alt="">
+                        <img loading="lazy" src="/assets/icons/javascript.png" alt="Javascript">
+                    </div>
+                    <div class="progress-container">
+                        <h3 class="skill-title">JAVASCRIPT</h3>
+                        <div class="skill-progress sp4">
+                            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                            <div></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="home-quote">
+        <section class="aboutme-education">
             <div class="container">
-                <blockquote>
-                    “every step counts, progress is progress”
-                </blockquote>
-                <span>- ME</span>
+                <h2 class="aboutme-education-title">EDUCATION</h2>
+                <div>
+                    <div class="education-indicator">
+                        <div class="indicator-container">
+                            <div class="dots-container">
+                                <span></span><span></span><span></span><span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="education-carousel">
+                        <div class="education-carousel-card">
+                            <div class="carousel-card-image">
+                                <img loading="lazy" src="" alt="Daycare School">
+                            </div>
+                            <div class="carousel-description">
+                                <h3>Mantabog Daycare Center</h3>
+                                <span>(Preschool)</span>
+                                <span>2009 - 2011</span>
+                                <p>Began exploring the world around me through play and discovery.</p>
+                            </div>
+                        </div>
+                        <div class="education-carousel-card">
+                            <div class="carousel-card-image">
+                                <img loading="lazy" src="" alt="Elementary School">
+                            </div>
+                            <div class="carousel-description">
+                                <h3><a href="https://maps.app.goo.gl/LXksMVtG6oDZfeTF7" target="_blank"
+                                        title="Sto. Domingo Elementary School">Sto. Domingo Elementary School</a></h3>
+                                <span>(Preschool & Elementary)</span>
+                                <span>2011 - 2017</span>
+                                <p>Developing essential skills in coding, networking, and system design.</p>
+                            </div>
+                        </div>
+                        <div class="education-carousel-card">
+                            <div class="carousel-card-image">
+                                <img loading="lazy" src="/assets/images/dqlnhs.png" alt="High School">
+                            </div>
+                            <div class="carousel-description">
+                                <h3><a href="https://maps.app.goo.gl/hSEqQ7DA7g5o2JDq8" target="_blank"
+                                        title="D.Q. Liwag National High School">D.Q. Liwag National High School</a></h3>
+                                <span>(High School & Senior High School - GAS)</span>
+                                <span>2017 - 2023</span>
+                                <p>Began exploring the world around me through play and discovery.</p>
+                            </div>
+                        </div>
+                        <div class="education-carousel-card">
+                            <div class="carousel-card-image">
+                                <img loading="lazy" src="/assets/images/cnsc.png" alt="College">
+                            </div>
+                            <div class="carousel-description">
+                                <h3><a href="https://maps.app.goo.gl/8gX2DVqNE4GE4YALA" target="_blank"
+                                        title="Camarines Norte State College">Camarines Norte State College</a></h3>
+                                <span>(College - BSIT)</span>
+                                <span>2023 - Now</span>
+                                <p>Began exploring the world around me through play and discovery.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="education-pagination">
+                        <button type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 24 24"
+                                style="enable-background:new 0 0 512 512" xml:space="preserve">
+                                <g>
+                                    <path
+                                        d="M24 12a12 12 0 1 0-12 12 12.013 12.013 0 0 0 12-12ZM8 12a2.993 2.993 0 0 1 .752-1.987c.291-.327.574-.637.777-.84L12.353 6.3a1 1 0 0 1 1.426 1.4l-2.829 2.88c-.187.188-.441.468-.7.759a1 1 0 0 0 0 1.323c.258.29.512.57.693.752l2.836 2.886a1 1 0 0 1-1.426 1.4l-2.829-2.878c-.2-.2-.48-.507-.769-.833A2.99 2.99 0 0 1 8 12Z"
+                                        fill="#000000" opacity="1" data-original="#000000" />
+                                </g>
+                            </svg>
+                        </button>
+                        <button type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 24 24"
+                                style="enable-background:new 0 0 512 512" xml:space="preserve">
+                                <g>
+                                    <path
+                                        d="M0 12A12 12 0 1 0 12 0 12.013 12.013 0 0 0 0 12Zm16 0a2.993 2.993 0 0 1-.752 1.987c-.291.327-.574.637-.777.84L11.647 17.7a1 1 0 1 1-1.426-1.4l2.829-2.88c.187-.188.441-.468.7-.759a1 1 0 0 0 0-1.323 20.85 20.85 0 0 0-.693-.752L10.221 7.7a1 1 0 1 1 1.426-1.4l2.829 2.879c.2.2.48.507.769.833A2.99 2.99 0 0 1 16 12Z"
+                                        fill="#000000" opacity="1" data-original="#000000" />
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="home-announcements">
+        <section class="aboutme-goals">
             <div class="container">
-                <div>
-                    <button type="button">JOIN</button>
-                    <span>ME ON MY</span>
+                <h2 class="aboutme-goals-title">GOALS</h2>
+                <div class="goals-container">
+                    <div class="short-term-goal">
+                        <h3>Short Term Goal</h3>
+                        <p>I’m working on improving my coding skills, building more applications, and gaining hands-on experience in web and app development. I’m also focused on learning more about cybersecurity</p>
+                    </div>
+                    <div class="long-term-goal">
+                        <h3>Long Term Goal</h3>
+                        <p>My ultimate goal is to become a cybersecurity specialist, helping protect people and businesses from online threats. I also aim to work on projects that blend my love for technology with real-world impact, making the internet a safer place for everyone.</p>
+                    </div>
                 </div>
-                <span>FESTIVE CHRISTMAS THEME</span>
             </div>
+
         </section>
     </main>
 
@@ -221,8 +310,6 @@
         </div>
 
     </footer>
-
-    <script src="/index.js"></script>
 
 </body>
 
