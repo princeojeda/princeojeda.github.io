@@ -13,28 +13,52 @@
 
     <header>
         <nav>
-            <ul>
+            <ul class="hidden">
+                <button type="button" class="nav-button" id="closeNav">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        width="512" height="512" x="0" y="0" viewBox="0 0 24 24"
+                        style="enable-background:new 0 0 512 512" xml:space="preserve">
+                        <g>
+                            <path
+                                d="M15.707 9.707 13.414 12l2.293 2.293a.999.999 0 1 1-1.414 1.414L12 13.414l-2.293 2.293a.997.997 0 0 1-1.414 0 .999.999 0 0 1 0-1.414L10.586 12 8.293 9.707a.999.999 0 1 1 1.414-1.414L12 10.586l2.293-2.293a.999.999 0 1 1 1.414 1.414ZM24 12c0 6.617-5.383 12-12 12S0 18.617 0 12 5.383 0 12 0s12 5.383 12 12Zm-2 0c0-5.514-4.486-10-10-10S2 6.486 2 12s4.486 10 10 10 10-4.486 10-10Z"
+                                fill="#000000" opacity="1" data-original="#000000" />
+                        </g>
+                    </svg>
+                </button>
                 <li class=""><a href="/">Home</a></li>
                 <li class="active"><a href="/aboutme/">About Me</a></li>
                 <li><a href="/myfamily/">My Family</a></li>
                 <li><a href="/gallery/">Gallery</a></li>
                 <li><a href="/contact/">Contact</a></li>
             </ul>
+            <button type="button" class="nav-button" id="openNav">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                    width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"
+                    xml:space="preserve" class="">
+                    <g>
+                        <path
+                            d="M480 224H32c-17.673 0-32 14.327-32 32s14.327 32 32 32h448c17.673 0 32-14.327 32-32s-14.327-32-32-32zM32 138.667h448c17.673 0 32-14.327 32-32s-14.327-32-32-32H32c-17.673 0-32 14.327-32 32s14.327 32 32 32zM480 373.333H32c-17.673 0-32 14.327-32 32s14.327 32 32 32h448c17.673 0 32-14.327 32-32s-14.327-32-32-32z"
+                            fill="#000000" opacity="1" data-original="#000000" />
+                    </g>
+                </svg>
+            </button>
         </nav>
         <div class="page-title">
             <h1>About Me</h1>
         </div>
     </header>
 
+
     <main>
 
         <section class="aboutme-introduction">
             <div class="container">
+                <img src="/assets/images/typing.gif" alt="Coding">
                 <p>
-                    I’m a curious and dedicated BSIT student who doesn’t give up easily. I love watching movies, gaming,
-                    and learning how to code. Right now, I’m working on improving my skills in creating apps and
-                    websites. My goal is to become a cybersecurity specialist and protect systems and networks from
-                    hackers, making sure everyone stays safe online.
+                    I’m a dedicated BSIT student with a passion for coding and technology. I enjoy building applications
+                    and websites with simple, user-friendly designs. From crafting small personal projects to exploring
+                    larger development challenges, I aim to create digital experiences that are both functional and
+                    enjoyable to use.
                 </p>
             </div>
         </section>
@@ -43,24 +67,11 @@
                 <h2 class="aboutme-skills-title">SKILLS</h2>
                 <div class="skill-container">
                     <div class="icon-container">
-                        <img loading="lazy" src="/assets/images/Game Effect.gif" alt="">
+                        <!-- <img loading="lazy" src="/assets/images/Game Effect.gif" alt=""> -->
                         <img loading="lazy" src="/assets/icons/python.png" alt="Python">
                     </div>
                     <div class="progress-container">
                         <h3 class="skill-title">PYTHON</h3>
-                        <div class="skill-progress sp4">
-                            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-                            <div></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-container">
-                    <div class="icon-container">
-                        <img loading="lazy" src="/assets/images/Game Effect.gif" alt="">
-                        <img loading="lazy" src="/assets/icons/java.png" alt="Java">
-                    </div>
-                    <div class="progress-container">
-                        <h3 class="skill-title">JAVA</h3>
                         <div class="skill-progress sp3">
                             <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
                             <div></div>
@@ -69,12 +80,25 @@
                 </div>
                 <div class="skill-container">
                     <div class="icon-container">
-                        <img loading="lazy" src="/assets/images/Game Effect.gif" alt="">
+                        <!-- <img loading="lazy" src="/assets/images/Game Effect.gif" alt=""> -->
+                        <img loading="lazy" src="/assets/icons/java.png" alt="Java">
+                    </div>
+                    <div class="progress-container">
+                        <h3 class="skill-title">JAVA</h3>
+                        <div class="skill-progress sp2">
+                            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-container">
+                    <div class="icon-container">
+                        <!-- <img loading="lazy" src="/assets/images/Game Effect.gif" alt=""> -->
                         <img loading="lazy" src="/assets/icons/javascript.png" alt="Javascript">
                     </div>
                     <div class="progress-container">
                         <h3 class="skill-title">JAVASCRIPT</h3>
-                        <div class="skill-progress sp4">
+                        <div class="skill-progress sp3">
                             <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
                             <div></div>
                         </div>
@@ -89,17 +113,21 @@
                     <div class="education-indicator">
                         <div class="indicator-container">
                             <div class="dots-container">
-                                <span></span><span></span><span></span><span></span>
+                                <span class="dot-indicator"></span>
+                                <span class="dot-indicator"></span>
+                                <span class="dot-indicator"></span>
+                                <span class="dot-indicator"></span>
                             </div>
                         </div>
                     </div>
                     <div class="education-carousel">
                         <div class="education-carousel-card">
                             <div class="carousel-card-image">
-                                <img loading="lazy" src="" alt="Daycare School">
+                                <img loading="lazy" src="/assets/images/daycare.png" alt="Daycare School">
                             </div>
                             <div class="carousel-description">
-                                <h3>Mantabog Daycare Center</h3>
+                                <h3><a href="https://maps.app.goo.gl/Swjv3WHZG4r4kSn67" target="_blank"
+                                        title="Mantabog Daycare Center">Mantabog Daycare Center</a></h3>
                                 <span>(Preschool)</span>
                                 <span>2009 - 2011</span>
                                 <p>Began exploring the world around me through play and discovery.</p>
@@ -107,14 +135,15 @@
                         </div>
                         <div class="education-carousel-card">
                             <div class="carousel-card-image">
-                                <img loading="lazy" src="" alt="Elementary School">
+                                <img loading="lazy" src="/assets/images/sdes.png" alt="Elementary School">
                             </div>
                             <div class="carousel-description">
                                 <h3><a href="https://maps.app.goo.gl/LXksMVtG6oDZfeTF7" target="_blank"
                                         title="Sto. Domingo Elementary School">Sto. Domingo Elementary School</a></h3>
                                 <span>(Preschool & Elementary)</span>
                                 <span>2011 - 2017</span>
-                                <p>Developing essential skills in coding, networking, and system design.</p>
+                                <p>Developed curiosity about how things work, which would later fuel my interest in
+                                    technology.</p>
                             </div>
                         </div>
                         <div class="education-carousel-card">
@@ -126,7 +155,8 @@
                                         title="D.Q. Liwag National High School">D.Q. Liwag National High School</a></h3>
                                 <span>(High School & Senior High School - GAS)</span>
                                 <span>2017 - 2023</span>
-                                <p>Began exploring the world around me through play and discovery.</p>
+                                <p>Built critical thinking skills and problem-solving abilities through academic
+                                    projects.</p>
                             </div>
                         </div>
                         <div class="education-carousel-card">
@@ -138,12 +168,12 @@
                                         title="Camarines Norte State College">Camarines Norte State College</a></h3>
                                 <span>(College - BSIT)</span>
                                 <span>2023 - Now</span>
-                                <p>Began exploring the world around me through play and discovery.</p>
+                                <p>Pursuing a BS in Information Technology to strengthen my technical skills.</p>
                             </div>
                         </div>
                     </div>
                     <div class="education-pagination">
-                        <button type="button">
+                        <button type="button" id="educationLeftBTN">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 24 24"
                                 style="enable-background:new 0 0 512 512" xml:space="preserve">
@@ -154,7 +184,7 @@
                                 </g>
                             </svg>
                         </button>
-                        <button type="button">
+                        <button type="button" id="educationRightBTN">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 24 24"
                                 style="enable-background:new 0 0 512 512" xml:space="preserve">
@@ -175,15 +205,51 @@
                 <div class="goals-container">
                     <div class="short-term-goal">
                         <h3>Short Term Goal</h3>
-                        <p>I’m working on improving my coding skills, building more applications, and gaining hands-on experience in web and app development. I’m also focused on learning more about cybersecurity</p>
+                        <p>
+                            I’m working on improving my coding skills, building more applications, and gaining hands-on
+                            experience in web and app development. I’m also focused on learning more about cybersecurity
+                        </p>
                     </div>
                     <div class="long-term-goal">
                         <h3>Long Term Goal</h3>
-                        <p>My ultimate goal is to become a cybersecurity specialist, helping protect people and businesses from online threats. I also aim to work on projects that blend my love for technology with real-world impact, making the internet a safer place for everyone.</p>
+                        <p>My ultimate goal is to become a cybersecurity specialist, helping protect people and
+                            businesses from online threats. I also aim to work on projects that blend my love for
+                            technology with real-world impact, making the internet a safer place for everyone.</p>
                     </div>
                 </div>
             </div>
 
+        </section>
+        <section class="aboutme-hobbies">
+            <div class="container">
+                <h2 class="aboutme-hobbies-title">HOBBIES &amp; INTERESTS</h2>
+                <div class="hobbies-container">
+                    <div class="hobby-card">
+                        <h3>Piano Lover</h3>
+                        <p>I love the sound of the piano. I listen to piano covers and play piano music games for fun.</p>
+                    </div>
+                    <div class="hobby-card">
+                        <h3>Gaming Enthusiast</h3>
+                        <p>I enjoy playing video games to relax and test my skills in strategy and quick thinking.</p>
+                    </div>
+                    <div class="hobby-card">
+                        <h3>Movie & Series Fan</h3>
+                        <p>I like watching movies and shows, always looking for the next interesting story to enjoy.</p>
+                    </div>
+                    <div class="hobby-card">
+                        <h3>Puzzle Solver</h3>
+                        <p>I like solving puzzles like Rubik’s cubes and try to beat my best time every chance I get.</p>
+                    </div>
+                    <div class="hobby-card">
+                        <h3>Chess Lover</h3>
+                        <p>I play chess for fun and to sharpen my thinking and strategy skills.</p>
+                    </div>
+                    <div class="hobby-card">
+                        <h3>Coding Explorer</h3>
+                        <p>I enjoy working on coding projects to learn new things and come up with creative ideas.</p>
+                    </div>
+                    
+                </div>
         </section>
     </main>
 
@@ -310,6 +376,8 @@
         </div>
 
     </footer>
+
+    <script src="/index.js"></script>
 
 </body>
 

@@ -13,18 +13,41 @@
 
     <header>
         <nav>
-            <ul>
+            <ul class="hidden">
+                <button type="button" class="nav-button" id="closeNav">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        width="512" height="512" x="0" y="0" viewBox="0 0 24 24"
+                        style="enable-background:new 0 0 512 512" xml:space="preserve">
+                        <g>
+                            <path
+                                d="M15.707 9.707 13.414 12l2.293 2.293a.999.999 0 1 1-1.414 1.414L12 13.414l-2.293 2.293a.997.997 0 0 1-1.414 0 .999.999 0 0 1 0-1.414L10.586 12 8.293 9.707a.999.999 0 1 1 1.414-1.414L12 10.586l2.293-2.293a.999.999 0 1 1 1.414 1.414ZM24 12c0 6.617-5.383 12-12 12S0 18.617 0 12 5.383 0 12 0s12 5.383 12 12Zm-2 0c0-5.514-4.486-10-10-10S2 6.486 2 12s4.486 10 10 10 10-4.486 10-10Z"
+                                fill="#000000" opacity="1" data-original="#000000" />
+                        </g>
+                    </svg>
+                </button>
                 <li class=""><a href="/">Home</a></li>
                 <li class=""><a href="/aboutme/">About Me</a></li>
                 <li class=""><a href="/myfamily/">My Family</a></li>
                 <li class=""><a href="/gallery/">Gallery</a></li>
                 <li class="active"><a href="/contact/">Contact Us</a></li>
             </ul>
+            <button type="button" class="nav-button" id="openNav">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                    width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"
+                    xml:space="preserve" class="">
+                    <g>
+                        <path
+                            d="M480 224H32c-17.673 0-32 14.327-32 32s14.327 32 32 32h448c17.673 0 32-14.327 32-32s-14.327-32-32-32zM32 138.667h448c17.673 0 32-14.327 32-32s-14.327-32-32-32H32c-17.673 0-32 14.327-32 32s14.327 32 32 32zM480 373.333H32c-17.673 0-32 14.327-32 32s14.327 32 32 32h448c17.673 0 32-14.327 32-32s-14.327-32-32-32z"
+                            fill="#000000" opacity="1" data-original="#000000" />
+                    </g>
+                </svg>
+            </button>
         </nav>
         <div class="page-title">
             <h1>Contact Us</h1>
         </div>
     </header>
+
 
     <main>
         <section class="contactus-form">
@@ -66,7 +89,7 @@
                     </div>
                     <div>
                         <div>
-                            <img loading="lazy" src="" alt="">
+                            <img loading="lazy" src="/assets/images/facebook-avatar.png" alt="">
                             <p>Let's be friends!</p>
                             <a href="https://www.facebook.com/im.234567890/" target="_blank">@im.234567890</a>
                         </div>
@@ -86,7 +109,7 @@
                     </div>
                     <div>
                         <div>
-                            <img loading="lazy" src="" alt="">
+                            <img loading="lazy" src="/assets/images/tiktok-avatar.png" alt="Tiktok Avatar">
                             <p>Streak Buddies?</p>
                             <a href="https://www.tiktok.com/@nwisowosh" target="_blank">@nwisowosh</a>
                         </div>
@@ -104,14 +127,14 @@
                                 <path
                                     d="M12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"
                                     fill="#000000" opacity="1" data-original="#000000" />
-                                <circle cx="18.406" cy="5.594" r="1.44" fill="#000000" opacity="1"
+                                <circle cx="18.406" cy="5.594" r="1.44" fill="#fff" opacity="1"
                                     data-original="#000000" />
                             </g>
                         </svg>
                     </div>
                     <div>
                         <div>
-                            <img loading="lazy" src="" alt="">
+                            <img loading="lazy" src="/assets/images/instagram-avatar.png" alt="">
                             <p>Follow My Journey!</p>
                             <a href="https://www.instagram.com/kitsunee.28/" target="_blank">kitsunee.28</a>
                         </div>
@@ -135,7 +158,7 @@
                     </div>
                     <div>
                         <div>
-                            <img loading="lazy" src="" alt="">
+                            <img loading="lazy" src="/assets/images/github-avatar.png" alt="">
                             <p>Let's collab!</p>
                             <a href="https://github.com/princeojeda" target="_blank">princeojeda</a>
                         </div>
@@ -144,7 +167,6 @@
             </div>
         </section>
     </main>
-
     <footer>
 
         <div class="container">
@@ -268,7 +290,7 @@
         </div>
 
     </footer>
-
+    <script src="/index.js"></script>
 </body>
 
 </html>

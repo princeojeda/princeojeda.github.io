@@ -13,34 +13,69 @@
 
     <header>
         <nav>
-            <ul>
+            <ul class="hidden">
+                <button type="button" class="nav-button" id="closeNav">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 24 24" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path d="M15.707 9.707 13.414 12l2.293 2.293a.999.999 0 1 1-1.414 1.414L12 13.414l-2.293 2.293a.997.997 0 0 1-1.414 0 .999.999 0 0 1 0-1.414L10.586 12 8.293 9.707a.999.999 0 1 1 1.414-1.414L12 10.586l2.293-2.293a.999.999 0 1 1 1.414 1.414ZM24 12c0 6.617-5.383 12-12 12S0 18.617 0 12 5.383 0 12 0s12 5.383 12 12Zm-2 0c0-5.514-4.486-10-10-10S2 6.486 2 12s4.486 10 10 10 10-4.486 10-10Z" fill="#000000" opacity="1" data-original="#000000"/></g></svg>
+                </button>
                 <li class=""><a href="/">Home</a></li>
                 <li class=""><a href="/aboutme/">About Me</a></li>
                 <li class=""><a href="/myfamily/">My Family</a></li>
                 <li class="active"><a href="/gallery/">Gallery</a></li>
                 <li><a href="/contact/">Contact</a></li>
             </ul>
+            <button type="button" class="nav-button" id="openNav">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M480 224H32c-17.673 0-32 14.327-32 32s14.327 32 32 32h448c17.673 0 32-14.327 32-32s-14.327-32-32-32zM32 138.667h448c17.673 0 32-14.327 32-32s-14.327-32-32-32H32c-17.673 0-32 14.327-32 32s14.327 32 32 32zM480 373.333H32c-17.673 0-32 14.327-32 32s14.327 32 32 32h448c17.673 0 32-14.327 32-32s-14.327-32-32-32z" fill="#000000" opacity="1" data-original="#000000"/></g></svg>
+            </button>
         </nav>
         <div class="page-title">
             <h1>Gallery</h1>
         </div>
     </header>
 
+
     <main>
         <section class="gallery-grid-photos">
             <div class="container">
-                <div>
-                    <img loading="lazy" src="/assets/images/home-announcement-bg.png" alt="">
+                <div onclick="openMe()">
+                    <img loading="lazy" src="/assets/images/gallery/me/thumbnail.png" alt="Me Thumbnail">
+                    <p>Me</p>
                 </div>
-                <div>
-                    <img loading="lazy" src="/assets/images/home-announcement-bg.png" alt="">
+                <div onclick="openFamily()">
+                    <img loading="lazy" src="/assets/images/gallery/family/thumbnail.png" alt="Family Thumbnail">
+                    <p>Family</p>
                 </div>
-                <div>
-                    <img loading="lazy" src="/assets/images/home-announcement-bg.png" alt="">
+                <div onclick="openFriends()">
+                    <img loading="lazy" src="/assets/images/gallery/friends/thumbnail.png" alt="Friends Thumbnail">
+                    <p>Friends</p>
                 </div>
-                <div>
-                    <img loading="lazy" src="/assets/images/home-announcement-bg.png" alt="">
+                <div onclick="openHobbies()">
+                    <img loading="lazy" src="/assets/images/gallery/hobbies/thumbnail.png" alt="Hobbies Thumbnail">
+                    <p>Hobbies</p>
                 </div>
+            </div>
+        </section>
+        <section class="gallery-container">
+            <div class="dark-background" onclick="closeGallery()">
+
+            </div>
+            <div class="galleryMe hidden">
+                <img src="/assets/images/gallery/me/1.jpg" alt="" srcset="">
+                <img src="/assets/images/gallery/me/2.jpg" alt="" srcset="">
+                <img src="/assets/images/gallery/me/3.jpg" alt="" srcset="">
+            </div>
+            <div class="galleryFamily hidden">
+                <img src="/assets/images/gallery/family/1.jpg" alt="" srcset="">
+
+            </div>
+            <div class="galleryFriends hidden">
+                <img src="/assets/images/gallery/friends/1.jpg" alt="" srcset="">
+                <img src="/assets/images/gallery/friends/2.jpg" alt="" srcset="">
+                <img src="/assets/images/gallery/friends/3.jpg" alt="" srcset="">
+                <img src="/assets/images/gallery/friends/4.jpg" alt="" srcset="">
+
+            </div>
+            <div class="galleryHobbies hidden">
+                <img src="/assets/images/gallery/hobbies/thumbnail.png" alt="">
             </div>
         </section>
     </main>
@@ -168,7 +203,7 @@
         </div>
 
     </footer>
-
+    <script src="/index.js"></script>
 </body>
 
 </html>
