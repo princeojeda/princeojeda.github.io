@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 4</title>
+    <style>
+        div {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            padding: 10px;
+            margin: 10px auto;
+            gap: 10px;
+            text-align: center;
+        }
+
+        input {
+            padding: 10px;
+        }
+
+        span {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Lesson 4: Loops & Conditionals</h1>
+    <p>Press F12 or CTRL + Shift + J to open the console tab</p>
+    <p>Name: Prince Jeorge V. Ojeda</p>
+
+    <div>
+        <input type="number" id="number" placeholder="Enter a number" onkeyup="evenOrOdd()" onchange="evenOrOdd()">
+        <span id="result"></span>
+    </div>
+
+    <script>
+        const input = document.getElementById("number");
+        function evenOrOdd(number) {
+            var result = document.getElementById("result");
+            if (number % 2 == 0) {
+                result.innerHTML = number + " is Even";
+            } else {
+                result.innerHTML = number + " is Odd";
+            }
+            if (!number) {
+                result.innerHTML = "";
+            }
+        }
+        input.addEventListener("keyup", function () {
+            evenOrOdd(input.value);
+        });
+        input.addEventListener("change", function () {
+            evenOrOdd(input.value);
+        });
+        
+        window.onload = function () {
+            for (var i = 1; i <= 10; i++) {
+                console.log(i);
+            }
+        }
+    </script>
+
+</body>
+
+</html>
