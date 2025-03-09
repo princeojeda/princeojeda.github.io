@@ -1,0 +1,8 @@
+1. How Secure Is My Password (howsecureismypassword.net/)
+    It says the it would take a computer about 4 hundred million years to crack my password.
+2. Check Your Password (www.microsoft.com/security/pc-security/password-checker.aspx)
+    Since this is not working right now or I just haven't found the right site, i decided to use another password check and this is Kaspersky Password Checker (password.kaspersky.com/). It says that my password will be bruteforced with an average home computer in approximately 3 years. 
+3. The Password Meter (www.passwordmeter.com/)
+    According to this website, my password's score is 100% and its complexity is very strong.
+
+According to the three password checker is two says that my password is very strong and it would take hundreds of million years to crack my password. And the other one says that it would just take 3 years to crack my password thru bruteforce. They all encourage someone to create a stronger password. What I think that provided the best information is it is the kaspersky because my password is really easy and even my friends will know it if they will try. 

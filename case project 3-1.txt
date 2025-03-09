@@ -1,0 +1,1 @@
+I recommend the IDrive if you want to backup multiple devices and dont have much anything to backup in your computer. But if you are the only one and have many files to backup from your computer, i recommend the Backblaze. But for those who want simple, automated backups with security features, I will recommend the Carbonite.
