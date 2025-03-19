@@ -1,0 +1,102 @@
+#include <Servo.h>
+#include <SoftwareSerial.h>
+#include <LiquidCrystal_I2C.h>
+#define sensorPin A0
+#define sensorPower 7
+LiquidCrystal_I2C lcd(0x27, 16, 2);
+
+SoftwareSerial sim(10, 11);
+
+String number = "+639686257330";
+Servo myServo;
+
+const int waterPumpPin = 13;
+const int buttonPinA = 2;
+const int buttonPinB = 12;
+const int buttonPinC = 4;
+const int servoPinA = 9;
+const int servoPinB = 6;
+const int ledPinA = 8;
+const int ledPinB = 5;
+const int ledPinC = 3;
+
+int servoAngle = 0;
+int ledState = 0;
+int buttonAState = LOW;
+int buttonBState = LOW;
+int buttonCState = LOW;
+int waterPumpState = LOW;
+int val = 0;
+int level = 0;
+
+void setup() {
+  pinMode(sensorPower, OUTPUT);
+  digitalWrite(sensorPower, LOW);
+  Serial.begin(9600);
+
+  lcd.init();
+  lcd.backlight();
+  lcd.setCursor(1,0);
+  lcd.print("RoboChill");
+  lcd.setCursor(1,1);
+  lcd.print("LET'S GO!!!");
+
+  myServo.attach(servoPinA);
+  myServo.attach(servoPinB);
+
+  pinMode(buttonPinA, INPUT_PULLUP);
+  pinMode(buttonPinB, INPUT_PULLUP);
+  pinMode(buttonPinC, INPUT_PULLUP);
+
+  Serial.begin(9600);
+}
+
+void loop() {
+  buttonAState = digitalRead(buttonPinA);
+  Serial.println(level);
+  if (buttonAState == LOW) {
+    // servo 1 for drain
+    // int level = readSensor();z
+    // if (servoAngle == 90) {
+    //   servoAngle = 0;
+    //   ledState = 0;
+    //   lcd.clear();
+    //   lcd.setCursor(1, 0);
+    //   lcd.print("Water Level");
+    //   lcd.setCursor(1, 1);
+    //   lcd.print(level);
+    // } else {
+    //   servoAngle = 90;
+    //   ledState = 1;
+    // }
+    // myServo.write(servoAngle);
+    // Serial.println(servoAngle);
+    // delay(500);
+
+  }
+
+  if (buttonBState == LOW) {
+    // servo 2 ricefield
+  }
+
+  if (buttonCState == LOW) {
+    // water pump
+    if (waterPumpState == HIGH) {
+      waterPumpState = LOW;
+    } else {
+      waterPumpState = HIGH;
+    }
+    digitalWrite(waterPumpPin, waterPumpState);
+  }
+
+  delay(50);
+}
+
+
+int readSensor() {
+  digitalWrite(sensorPower, HIGH);
+  delay(10);
+  val = analogRead(sensorPin);
+  digitalWrite(sensorPower, LOW);
+  return val;
+}
