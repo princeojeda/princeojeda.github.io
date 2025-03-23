@@ -50,10 +50,18 @@ void wait(int value) {
   }
 }
 
+void lcdWrite(String message1, String message2 = "") {
+  lcd.clear();
+  lcd.setCursor(1, 0);
+  lcd.print(message1);
+  lcd.setCursor(1, 1);
+  lcd.print(message2);
+}
+
 void setup() {
   pinMode(waterSensorPower, OUTPUT);
-  pinmode(ledPinA, OUTPUT);
-  pinmode(ledPinB, OUTPUT);
+  pinMode(ledPinA, OUTPUT);
+  pinMode(ledPinB, OUTPUT);
   digitalWrite(waterSensorPower, LOW);
   Serial.begin(9600);
 
@@ -85,9 +93,9 @@ void loop() {
   soilMoistureValue = readSoilMoistureSensor();
 
   // display current water level
-  lcdWrite("Water Level", waterLevelValue);
+  lcdWrite("Water Level", waterLevelValue + "");
 
-  if (waterpumpState == HIGH) {
+  if (waterPumpState == HIGH) {
     digitalWrite(waterPumpPin, HIGH);
     wait(100);
     digitalWrite(waterPumpPin, LOW);
@@ -103,7 +111,8 @@ void loop() {
     // water level is high
     // send message
     lcdWrite("Sending SMS...");
-    String message = "Warning!\n\nThe water level is rising!\nCurrent Water Level: " + waterLevelValue + "";
+    String message = "Warning!\n\nThe water level is rising!\nCurrent Water Level: ";
+    message += waterLevelValue;
     // sendAlertSMS(message, number);
     Serial.println(message);
 
@@ -113,7 +122,7 @@ void loop() {
   if (soilMoistureValue > 600 and countdownSoilMoisture <= 0) {
     // soil is dry
     // need watering
-    if (sevoBAngle == 0) {
+    if (servoBAngle == 0) {
       servoBAngle = 90;
     }
     myServoB.write(servoBAngle);
@@ -165,14 +174,6 @@ void loop() {
   wait(150);
 }
 
-void writeLCD(String message1, String message2 = "") {
-  lcd.clear();
-  lcd.setCursor(1, 0);
-  lcd.print(message1);
-  lcd.setCursor(1, 1);
-  lcd.print(message2);
-}
-
 int readWaterSensor() {
   digitalWrite(waterSensorPower, HIGH);
   delay(10);
@@ -183,7 +184,7 @@ int readWaterSensor() {
 
 int readSoilMoistureSensor() {
   soilMoistureValue = analogRead(soilMoisturePin);
-  return soilMoistureSensor;
+  return soilMoistureValue;
 }
 
 void sendAlertSMS(String message, String phoneNumber) {
