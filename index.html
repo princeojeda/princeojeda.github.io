@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <aside>
+        <nav>
+            <ul>
+                <li>
+                    <a href="">Password Generator</a>
+                </li>
+                <li>
+                    <a href="">IG Downloader</a>
+                </li>
+                <li>
+                    <a href="">TT Downloader</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+
+        <section id="password-generator" class="show">
+            <h2>Password Generator</h2>
+            <form action="generate-password" method="post" id="pg-form">
+                <input type="text" id="password" name="password" placeholder="Password generated">
+                <button type="submit">Generate</button>
+            </form>
+        </section>
+
+        <section id="ig-downloader">
+            <h2>Instagram Downloader</h2>
+            <form action="/download-ig" method="POST" id="ig-form">
+                <input type="text" id="ig-url" name="ig-url" placeholder="Enter Instagram post URL" required>
+                <button type="submit">Download</button>
+            </form>
+            <div id="ig-download-result"></div>
+        </section>
+
+        <section id="tt-downloader">
+            <h2>TikTok Downloader</h2>
+            <form action="/download-tt" method="POST" id="tt-form">
+                <input type="text" id="tt-url" name="tt-url" placeholder="Enter TikTok post URL" required>
+                <button type="submit">Download</button>
+            </form>
+            <div id="tt-download-result"></div>
+        </section>
+
+    </main>
+
+</body>
+</html>
